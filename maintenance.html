@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance GST</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .logo {
+            /* font-size: 2rem; */
+            margin-left: 2cm;
+            height: 120px;
+            
+            font-weight: 300px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+   nav{
+            display : flex;
+        }
+
+header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color : white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 10px;
+            text-align: center;
+            width: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./ressources/logo.jpg" alt="logo" class="logo">
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <a href="./magasin/piece.php">
+                <h2>Magasin</h2>
+                <p>Gestion des pièces</p>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="./preventive/Data/data.php">
+                <h2>Maintenance Préventive</h2>
+                <p>Suivi des entretiens</p>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="./curative/Data/data.php">
+                <h2>Maintenance Curative</h2>
+                <p>Gestion des interventions</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
